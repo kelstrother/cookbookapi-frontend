@@ -1,13 +1,83 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+   background: linear-gradient(to top right, rgb(209, 196, 82) 0%, rgba(68,195,196,1) 70%, rgb(3, 37, 70) 100%);
+  background-size: 100%;
+  min-height: 100%;
+}
+
+body {
+  color: #333;
+ 
+  font-family: 'Yusei Magic';
+  font-size: 1.3rem;
+}
+.App {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.app-title {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.cb-title {
+  text-decoration: underline;
+  padding-top: 1.5rem;
+}
+
+.cb-year {
+  /* text-decoration: underline; */
+  padding-top: .3rem;
+  padding-bottom: 1rem;
+}
+
+.create-btn {
+  font-size: 1.1rem;
+  background-color: #333;
+  color: #e0e0e0;
+  box-shadow: 2px 2px 5px #333;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: .4rem;
+  width: 15vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.update-btn {
+  font-size: 1.1rem;
+  background-color: #333;
+  color: #e0e0e0;
+  border-radius: 10px;
+  width: 7vw;
+  padding: .3rem;
+  margin-right: .7rem;
+}
+
+.delete-btn {
+  font-size: 1.1rem;
+  background-color: #333;
+  color: #e0e0e0;
+  border-radius: 10px;
+  width: 7vw;
+  padding: .3rem;
+  margin-left: .7rem;
+}
+
+
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
 }
